@@ -4,26 +4,32 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
+import { useGSAP } from '@gsap/react'; 
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
-  const wrapRef = useRef();
-  const firstSecRef = useRef();
+  const wrapRef = useRef(null);
+  const firstSecRef = useRef(null);
   console.clear();
 
-
-  useEffect(() => {
+  useGSAP(() => {
+    const wrapEl = wrapRef.current;
+    const firstSecEl = firstSecRef.current;
     gsap
     .timeline({
+      defaults: {
+        duration: 1,
+      },
       scrollTrigger: {
-        trigger:wrapRef.current,
+        trigger:wrapEl,
+        scrub:1,
         start:'top top',
-        end:'+=300%',
+        end:'+=200%',
         pin:true,
         markers:true,
-        scrub:true
+        
       }
     })
     .to('img', {
@@ -33,31 +39,33 @@ export default function Home() {
       ease:'power1.inOut'
     })
     .to(
-      firstSecRef.current,
+      firstSecEl,
       {
-        scale:1.1,
+        scale:1,
         transformOrigin:'center center',
-        ease:'power1.inOut'
+        ease:'power1.inOut',
       },
       '<'
     );
-
-  }, []);
+  }, { scope: wrapRef.current });
 
   return (
-      <div className={styles.wrapper} ref={wrapRef}>
+      <div className={styles.container}>
+        <div className={styles.animate_dom} ref={wrapRef}>
+          <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}></section>
+          <div className={styles.img_box}>
+            <Image 
+              src="/main/bg_new.png" 
+              alt="bg img" 
+              width={1920}
+              height={1080}
+            />
+          </div>
+        </div>
+
         <div className={styles.content}>
-          <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}>?</section>
           <section className={`${styles.section} ${styles.second}`}></section>
           <section className={`${styles.section} ${styles.third}`}></section>
-        </div>
-        <div className={styles.img_box}>
-          <Image 
-            src="/main/bg_new.png" 
-            alt="bg img" 
-            layout="fill"
-            objectFit="cover"
-          />
         </div>
       </div>
   );
