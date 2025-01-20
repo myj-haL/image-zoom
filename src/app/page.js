@@ -7,9 +7,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useGSAP } from '@gsap/react'; 
 
-gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function Home() {
+  gsap.registerPlugin(useGSAP, ScrollTrigger);
+
   const wrapRef = useRef(null);
   const firstSecRef = useRef(null);
   const imgBoxRef = useRef(null)
@@ -18,6 +19,8 @@ export default function Home() {
   useGSAP(() => {
     const wrapEl = wrapRef.current;
     const firstSecEl = firstSecRef.current;
+    const scaleValue = window.innerWidth < 1024 ? 5.5 : 4.5;
+    const zValue = window.innerWidth >= 1024 ? 450 : 650;
 
     gsap
     .timeline({
@@ -34,8 +37,8 @@ export default function Home() {
       }
     })
     .to(imgBoxRef.current, {
-      scale:2.5,
-      z:450,
+      scale:scaleValue,
+      z:zValue,
       transformOrigin:'center center',
       ease:'power1.inOut'
     })
@@ -78,10 +81,17 @@ export default function Home() {
         </div>
 
         <div className={styles.content}>
-          <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}></section>
+          <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}>
+            <div className={styles.first_title_box}>
+              <p>Toward</p>
+              <p>infinite</p>
+              <p>possibilities</p>
+            </div>
+          </section>
           <section className={`${styles.section} ${styles.second}`}></section>
           <section className={`${styles.section} ${styles.third}`}></section>
         </div>
       </div>
   );
 }
+
