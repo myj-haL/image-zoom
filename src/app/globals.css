@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 
 
 :root {
@@ -24,16 +28,19 @@ body {
   color: var(--foreground);
   background: var(--background);
   /* font-family: "Roboto", serif; */
-  font-family: "DM Serif Text", serif;
+  font-family: "Inter", "Noto Sans KR", serif;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #F5F3F0;
+  color: #2C2C2C;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  word-break: keep-all;
 }
 
 a {

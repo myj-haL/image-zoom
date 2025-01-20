@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useGSAP } from '@gsap/react'; 
+import Introduce from "./main/introduce";
 
 
 export default function Home() {
@@ -88,7 +89,8 @@ export default function Home() {
               <p>possibilities</p>
             </div>
           </section>
-          <section className={`${styles.section} ${styles.second}`}></section>
+          
+          <Introduce />
           <section className={`${styles.section} ${styles.third}`}></section>
         </div>
       </div>

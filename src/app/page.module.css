@@ -1,5 +1,4 @@
 .container {
-
   .content {
     position: relative;
     width: 100%;
@@ -10,18 +9,17 @@
     width: 100%;
     height: 100vh;
     position: relative;
+    z-index: 10;
   
     &.first {
       background-image: url(/main/inner_bg.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
+      font-family: "DM Serif Text", sans-serif;
     }
   
-    &.second {
-      background-color: purple;
-    }
-  
+
     &.third {
       background-color: blue;
     }
@@ -60,6 +58,7 @@
     box-sizing: border-box;
     display: grid;
     gap: 30px;
+    font-family: "DM Serif Text", sans-serif;
     
     p {
       font-size: 100px;
@@ -147,8 +146,10 @@
     }
 
     .mouse_icon {
-      width: 58px;
-      height: 58px;
+      img {
+        width: 58px;
+        height: 58px;
+      }
       bottom: 30px;
     }
 

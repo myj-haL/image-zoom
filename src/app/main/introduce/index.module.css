@@ -1,0 +1,161 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  
+  &::before, &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -80px;
+    right: -80px;
+    width: 180px;
+    height: 180px;
+    background-color: #FF5E40;
+    filter: blur(100px);
+    z-index: -1;
+  }
+
+  &::after {
+    top: initial;
+    right: initial;
+    left: -80px;
+    bottom: -80px;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    padding: 50px 16px;
+    box-sizing: border-box;
+
+  }
+
+  .left {
+    margin-bottom: 68px;
+
+    br {
+      display: none;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+      color: #707070;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 30px; 
+      color: #2C2C2C;
+    }
+  }
+
+  .right {
+    display: grid;
+    gap: 90px;
+  }
+
+  .intro_box {
+    .category {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 30px;
+      color: #707070;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    > p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 25px; 
+      color: #2C2C2C;
+    }
+  }
+  
+  .number {
+    display: flex;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: normal;
+    gap: 5px;
+    margin-bottom: 6px;
+
+    p {
+      font-size: 20px;
+    } 
+  }
+
+  @media screen and (min-width:1024px) {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    &::before, &::after {
+      width: 250px;
+      height: 250px;
+    }
+
+    .inner {
+      padding: 54px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 100px;
+    }
+
+    .left {
+      margin-bottom: 0;
+      flex: 0 0 20%;
+      br {
+        display: block;
+      }
+
+      span {
+        font-size: 20px;
+        margin-bottom: 11px;
+      }
+
+      h3 {
+        font-size: 35px;
+        line-height: 45px;
+      }
+    }
+
+    .right {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 88px;
+      flex: 0 0 60%;
+    }
+
+    .intro_box {
+      .category {
+        font-size: 25px;
+        line-height: normal;
+        margin-bottom: 16px;
+      }
+
+      > p {
+        font-size: 20px;
+        line-height: 40px; 
+      }
+    }
+
+    .number  {
+      font-size: 90px;
+      gap: 26px;
+
+      p {
+        font-size: 36px;
+      }
+    }
+  }
+}
