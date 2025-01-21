@@ -4,19 +4,19 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
+import { use, useRef } from "react";
 import { useGSAP } from '@gsap/react'; 
 import Introduce from "./main/introduce";
 import Contacts from "./main/contacts";
 import Skills from "./main/skills";
-
 
 export default function Home() {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
 
   const wrapRef = useRef(null);
   const firstSecRef = useRef(null);
-  const imgBoxRef = useRef(null)
+  const imgBoxRef = useRef(null);
+  const titleBoxRef = useRef(null);
   console.clear();
 
   useGSAP(() => {
@@ -26,35 +26,31 @@ export default function Home() {
     const zValue = window.innerWidth >= 1024 ? 450 : 650;
 
     gsap
-    .timeline({
+      .timeline({
       defaults: {
-        duration: 1,
+        duration: 1, // 기본 지속 시간
       },
       scrollTrigger: {
-        trigger:wrapEl,
-        scrub:1,
-        start:'top top',
-        end:'+=200%',
-        pin:true,
-        
-      }
-    })
-    .to(imgBoxRef.current, {
-      scale:scaleValue,
-      z:zValue,
-      transformOrigin:'center center',
-      ease:'power1.inOut'
-    })
-    .to(
-      firstSecEl,
-      {
-        scale:1,
-        transformOrigin:'center center',
-        ease:'power1.inOut',
+        trigger: wrapEl, // 전체 타임라인의 ScrollTrigger
+        scrub: 1,        // 스크롤과 동기화
+        start: "top top",
+        end: "+=200%",
+        pin: true,       // 요소 고정
       },
-      '<'
+    })
+    // 첫 번째 애니메이션
+    .to(imgBoxRef.current, {
+      scale: scaleValue,
+      z: zValue,
+      transformOrigin: "center center",
+      ease: "power1.inOut",
+    })
+    // 두 번째 애니메이션
+    .fromTo(titleBoxRef.current, 
+      {opacity: 0, y: 20},
+      {opacity: 1, y: -20, duration: 1}
     );
-  }, { scope: wrapRef.current });
+  }, [wrapRef.current, imgBoxRef.current, titleBoxRef.current ]);
 
   return (
       <div className={styles.container} ref={wrapRef}>
@@ -85,7 +81,7 @@ export default function Home() {
 
         <div className={styles.content}>
           <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}>
-            <div className={styles.first_title_box}>
+            <div className={styles.first_title_box} ref={titleBoxRef}>
               <p>Toward</p>
               <p>infinite</p>
               <p>possibilities</p>
@@ -93,7 +89,6 @@ export default function Home() {
           </section>
 
           <Introduce />
-          <section className={`${styles.section} ${styles.third}`}></section>
           <Skills />
           <Contacts />
         </div>
