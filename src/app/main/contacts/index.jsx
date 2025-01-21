@@ -35,10 +35,10 @@ export default function Contacts () {
           </a>
         </div>
 
-        <p className={styles.copyright}>
-          © 2025. Moon Yu-jeong Portfolio. All rights reserved.
-        </p>
       </div>
+      <p className={styles.copyright}>
+        © 2025. Moon Yu-jeong Portfolio. All rights reserved.
+      </p>
     </div>
   )
 }
