@@ -8,6 +8,7 @@ import { useRef } from "react";
 import { useGSAP } from '@gsap/react'; 
 import Introduce from "./main/introduce";
 import Contacts from "./main/contacts";
+import Skills from "./main/skills";
 
 
 export default function Home() {
@@ -93,6 +94,7 @@ export default function Home() {
 
           <Introduce />
           <section className={`${styles.section} ${styles.third}`}></section>
+          <Skills />
           <Contacts />
         </div>
       </div>
