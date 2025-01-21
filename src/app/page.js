@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useGSAP } from '@gsap/react'; 
 import Introduce from "./main/introduce";
+import Contacts from "./main/contacts";
 
 
 export default function Home() {
@@ -89,9 +90,10 @@ export default function Home() {
               <p>possibilities</p>
             </div>
           </section>
-          
+
           <Introduce />
           <section className={`${styles.section} ${styles.third}`}></section>
+          <Contacts />
         </div>
       </div>
   );
