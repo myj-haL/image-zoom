@@ -4,11 +4,12 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { use, useRef } from "react";
+import { useRef } from "react";
 import { useGSAP } from '@gsap/react'; 
 import Introduce from "./main/introduce";
 import Contacts from "./main/contacts";
 import Skills from "./main/skills";
+import Works from "./main/works";
 
 export default function Home() {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -89,6 +90,7 @@ export default function Home() {
           </section>
 
           <Introduce />
+          <Works />
           <Skills />
           <Contacts />
         </div>
