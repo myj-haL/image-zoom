@@ -69,7 +69,7 @@
 
   @media screen and (min-width:1024px) {
     .inner {
-      padding: 54px;
+      padding: 100px 54px;
     }
 
     .flex_wrap {

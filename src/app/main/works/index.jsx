@@ -3,8 +3,11 @@ import worksList from "./worksList";
 import SectionTitle from "@/app/components/SectionTitle";
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
+import { Pagination, Navigation } from 'swiper/modules';
+import useMediaQuery from "@/hooks/useMediaQuery";
+import { useRef } from "react";
 
 export default function Works () {
   const chunkArray = (array, size) => {
@@ -17,22 +20,32 @@ export default function Works () {
   
   // Create chunks with 3 items per group
   const groupedWorksList = chunkArray(worksList, 3);
+
+  const innerWidth = useMediaQuery();
+  console.log(innerWidth)
+  const pagingRef = useRef(null);
   
   return (
     <div className={styles.container}>
       <div className={styles.inner}>
-        <SectionTitle 
-          title="Works"
-          subTitle="Company"
-          option='white'
-        />
+        <div className={styles.top_title}>
+          <SectionTitle 
+            title="Works"
+            subTitle="Company"
+            option='white'
+          />
+        </div>
 
         
         <Swiper className={styles.works_list} 
-          pagination={true} 
-          modules={[Pagination]} 
+          pagination={true}
+          navigation={{
+            prevEl: `.swiper-button-prev`,
+            nextEl: `.swiper-button-next`,
+          }}
+          modules={[Pagination, Navigation]} 
           slidesPerView={1} 
-          spaceBetween={30}
+          spaceBetween={100}
           >
             {groupedWorksList.map((group, groupIdx) => (
               <SwiperSlide className={styles.works_item} key={groupIdx}>
