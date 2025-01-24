@@ -15,6 +15,16 @@
     color: #2C2C2C;
   }
 
+  &.white {
+    span {
+      color: #DEDEDE;
+    }
+
+    h3 {
+      color: #fff;
+    }
+  }
+
   @media screen and (min-width:1024px) {
     span {
       font-size: 20px;
