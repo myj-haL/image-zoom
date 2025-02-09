@@ -10,6 +10,7 @@ import Introduce from "./main/introduce";
 import Contacts from "./main/contacts";
 import Skills from "./main/skills";
 import Works from "./main/works";
+import Experience from "./main/experience";
 
 export default function Home() {
   gsap.registerPlugin(useGSAP, ScrollTrigger);
@@ -91,6 +92,7 @@ export default function Home() {
 
           <Introduce />
           <Works />
+          <Experience />
           <Skills />
           <Contacts />
         </div>

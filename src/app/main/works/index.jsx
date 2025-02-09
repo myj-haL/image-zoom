@@ -22,7 +22,6 @@ export default function Works () {
   const groupedWorksList = chunkArray(worksList, 3);
 
   const innerWidth = useMediaQuery();
-  console.log(innerWidth)
   const pagingRef = useRef(null);
   
   return (
