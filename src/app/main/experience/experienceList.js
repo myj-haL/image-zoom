@@ -4,63 +4,81 @@ const experienceList = [
     name:'redbrick 2.0 리뉴얼',
     skills:'React, HTML5, SCSS, PostCss, SEO',
     explain:"전반적인 퍼블리싱 총괄과 함께 2.0 리뉴얼에서는 유저가 창작물을 손쉽게 제작하고 공유할 수 있는 인터페이스를 제공하는데 최선을 다하였습니다.\n\n디자이너와 협업하여 아바타 선택 UI 를 보다 직관적으로 변경하는 작업을 주도하였으며, 스크롤 애니메이션과 마이크로 인터랙션 등을 활용해 유저가 사이트를 재밌게 이용할 수 있도록 하였습니다.",
-    img:'/main/1.png'
+    img:'/main/1.png',
+    detailImg:'/main/1-1.png',
+    ratio:'0.9/1'
   },
   {
     id:1,
     name:'신규 서비스 플랫폼',
     skills:'React, HTML5, Styled-components, TypeScript',
     explain:"본 프로젝트에서는 React 환경을 기반으로 한 컴포넌트 중심의 반응형 UI 웹 퍼블리싱을 진행했습니다. 웹 애플리케이션의 효율적인 UI 설계를 위해 styled-components를 사용하여 재사용 가능한 컴포넌트를 설계하고, 다양한 화면 크기와 디바이스에 최적화된 반응형 디자인을 구현했습니다.",
-    img:'/main/2.png'
+    img:'/main/2.png',
+    detailImg:'/main/2-1.png',
+    ratio:'1/1'
   },
   {
     id:2,
     name:'브랜드 플랫폼',
     skills:'React, HTML5, SCSS, react-i18, emailJS',
     explain:"웹 퍼블리싱과 UI 구현을 주도하며, react-i18n 라이브러리로 한/영 다국어 처리 기능을 구현하여 글로벌 사용자들을 지원했습니다. EmailJS를 활용해 유저 문의 내용을 이메일로 자동 전송하는 시스템을 구축, 사용자와의 커뮤니케이션을 효율적으로 개선했습니다. 또한, 직관적인 UI 애니메이션을 도입하여 사용자의 상호작용 경험을 향상시켰습니다. 마지막으로, GoDaddy에서 구매한 도메인을 InMotion Hosting 서버와 연동하고 DNS 레코드 설정을 통해 사이트를 안정적으로 배포 및 운영할 수 있는 환경을 구축했습니다.",
-    img:'/main/3.png'
+    img:'/main/3.png',
+    detailImg:'/main/3-1.png',
+    ratio:'3/4'
   },
   {
     id:3,
     name:'브랜드 내 마이크로 사이트',
     skills:'PHP, HTML5, SCSS',
     explain:"브랜드의 음식을 홍보하는 것을 목적으로 생성된 브랜드 마이크로 사이트입니다. 다양한 화면 크기에 최적화된 반응형 디자인을 적용하였으며, 당시 근무했던 회사의 솔루션을 이용하여 관리자 페이지 및 사이트 UI 를 웹퍼블리싱 하였습니다.",
-    img:'/main/5.png'
+    img:'/main/5.png',
+    detailImg:'/main/4-1.png',
+    ratio:'2/1.6'
   },
   {
     id:4,
     name:'기업 소개 사이트',
     skills:'PHP, HTML5, CSS3',
     explain:"주로 기업을 소개하는 목적으로 만들어진 사이트입니다. 사용자에게 브랜드에 대해 알리고 신뢰를 쌓기 위해 중요한 정보를 제공하는 역할을 합니다. PHP 기반 환경에서 html, css 등으로 작업하였으며, swiper 같은 애니메이션이 활용되었습니다.",
-    img:'/main/6.png'
+    img:'/main/4.png',
+    detailImg:'/main/5-1.png',
+    ratio:'1/1.5'
   },
   {
     id:5,
     name:'서울 모빌리티 플랫폼',
     skills:'HTML5, CSS3',
     explain:"AI 기술을 활용한 서비스 제공 플랫폼을 구축하는 것을 목표로 했습니다. 사용자가 AI 기술을 쉽게 접하고, 다양한 기능을 활용할 수 있도록 직관적이고 효율적인 사용자 인터페이스(UI)를 구현했습니다. AI 모델을 기반으로 한 자동화된 데이터 분석, 예측 서비스, 그리고 맞춤형 추천 시스템 등이 포함되어 있습니다. 이를 통해 사용자는 고도의 데이터 분석 결과를 실시간으로 제공받고, 비즈니스 의사결정을 지원하는 데 필요한 인사이트를 얻을 수 있습니다. 간단한 UI 퍼블리싱과 swiper 등의 애니메이션이 활용되었습니다.",
-    img:'/main/7.png'
+    img:'/main/6.png',
+    detailImg:'/main/6-1.png',
+    ratio:'1/0.7'
   },
   {
     id:6,
     name:'신규 서비스 플랫폼',
     skills:'TypeScript, Chakra UI, HTML5, GSAP',
     explain:"웹 퍼블리싱 및 UI 구현을 담당하며, Chakra-UI를 활용하여 반응형 UI 컴포넌트를 제작했습니다. 또한, GSAP 애니메이션을 사용하여 페이지 로딩과 스크롤 시 시각적인 효과를 강화함으로써, 사용자 경험을 더욱 몰입감 있고 흥미롭게 만들었습니다. 코드의 유지보수를 용이하게 하기 위해, 모든 UI 컴포넌트와 기능을 모듈화하여 효율적이고 관리하기 쉬운 구조로 개발했습니다.",
-    img:'/main/8.png'
+    img:'/main/7.png',
+    detailImg:'/main/7-1.png',
+    ratio:'1/1.2'
   },
   {
     id:7,
     name:'redbrick 3.0 리뉴얼',
     skills:'React, HTML5, SCSS, PostCss, SEO, AWS, ',
     explain:"해당 사이트의 UI 퍼블리싱을 총괄 진행하였으며, 주요 작업으로는 GSAP과 AOS 등의 애니메이션 라이브러리를 활용하여 스크롤 동작과 다양한 시각적 효과를 강화하였습니다.\nReact-facebook-pixel을 도입하여 유저들의 행동 패턴을 추적하고, 버튼 클릭이나 특정 요소의 트리거를 통해 유저들의 인입 및 이탈 행동 데이터를 수집하여, 서비스 개선에 기여할 수 있는 기초 자료를 확보했습니다.",
-    img:'/main/9.png'
+    img:'/main/8.png',
+    detailImg:'/main/8-1.png',
+    ratio:'1/0.8'
   },
   {
     id:8,
     name:'신규 서비스 플랫폼',
     skills:'PHP, HTML5, SCSS',
     explain:"PHP 기반으로 구축된 사이트에서, 사용자가 직관적으로 정보를 찾을 수 있도록 반응형 디자인을 적용하고, 효율적인 UI 구성을 통해 편리한 사용자 경험을 제공했습니다. 학생들을 위한 학습 지원 플랫폼으로, 사용자들이 사이트 내에서 필요한 학습 정보를 쉽고 빠르게 찾을 수 있도록 도와주는 편리하고 유용한 기능을 제공하는 것을 목표로 했습니다.",
-    img:'/main/10.png'
+    img:'/main/10.png',
+    detailImg:'/main/9-1.png',
+    ratio:'1/1'
   },
 ]
 

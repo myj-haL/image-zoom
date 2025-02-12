@@ -1,0 +1,36 @@
+.wrap {
+  flex: 1;
+
+  .container {
+  
+    .masonry_list {
+      place-content:flex-end !important;
+      gap: 30px !important;
+  
+      > div {
+        max-width: 500px;
+        gap: 30px !important;
+        
+      }
+    }
+  
+    .img_wrap {
+      width: 100%;
+      height: auto;
+      background-color: #fff;
+      box-shadow: 3px 3px 23px 5px rgba(0, 0, 0, 0.25), 0px 0px 8px 0px rgba(0, 0, 0, 0.25) inset;
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      border: 0;
+  
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 20px;
+      }
+    }
+  }
+}
