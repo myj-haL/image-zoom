@@ -49,6 +49,7 @@ export default function Pc () {
           }}
         />
       }
+      
     </div>
 
   )
