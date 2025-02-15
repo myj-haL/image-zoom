@@ -29,10 +29,14 @@ export default function WorksModal ({img, name, explain, learn, skills, ...props
         <div className={styles.contents}>
           <div className={styles.left}>
             <p>{explain}</p>
+
+            {learn && 
             <span>
               <p className={styles.category}>[Learn]</p>
               <p>{learn}</p>
             </span>
+            }
+            
             <span>
               <p className={styles.category}>[Skills]</p>
               <p>{skills}</p>

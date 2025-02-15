@@ -65,14 +65,19 @@
       max-width: 500px;
       word-break: keep-all;
       margin: 0;
+      white-space: pre-wrap;
     }
 
     > span {
+      max-width: 500px;
+      word-break: keep-all;
+      white-space: pre-wrap;
+      
       p {
         &:last-child {
           font-size: 15px;
           font-weight: 400;
-          line-height: normal;
+          line-height: 23px;
           color: #828282;
         }
       }

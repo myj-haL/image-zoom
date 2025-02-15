@@ -42,14 +42,14 @@ export default function Pc () {
           explain={selectedItem.explain}
           name={selectedItem.name}
           skills={selectedItem.skills}
-          learn={'learn'}
+          {...(selectedItem.learn ? { learn: selectedItem.learn } : {})}
           onHide={() => {
             setModalShow(false);
             setSelectedItem(null);
           }}
         />
       }
-      
+
     </div>
 
   )
