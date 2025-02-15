@@ -60,7 +60,9 @@ export default function Home() {
           <div className={styles.animate_inner} ref={imgBoxRef}>
             <div className={styles.title_box}>
               <p>Beyond</p>
-              <p>One&apos;s</p> 
+              <p>
+                One&apos;s
+              </p> 
               <p>Limits</p>
             </div>
             <Image 

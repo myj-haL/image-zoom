@@ -2,6 +2,7 @@ import styles from "./index.module.css";
 import introList from "./introList";
 
 export default function Introduce () {
+
   return (
     <section className={styles.container}>
       <div className={styles.inner}>

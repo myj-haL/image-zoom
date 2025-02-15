@@ -3,6 +3,8 @@ import SectionTitle from "@/app/components/SectionTitle";
 import useResponsive from "@/hooks/useMediaQuery";
 import Mobile from "./Mobile";
 import Pc from "./Pc";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Experience () {
   const innerWidth = useResponsive();
@@ -15,7 +17,7 @@ export default function Experience () {
             title="Projects"
             subTitle="Experience"
           />
-          {innerWidth > 1024 && <p>(*주요 프로젝트)</p>}
+          {innerWidth > 1024 && <p>(*주요 프로젝트 Click!)</p>}
         </div>
 
         {innerWidth > 1024 ? 
