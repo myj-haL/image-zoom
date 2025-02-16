@@ -17,7 +17,7 @@ export default function Experience () {
             title="Projects"
             subTitle="Experience"
           />
-          {innerWidth > 1024 && <p>(*주요 프로젝트 Click!)</p>}
+          {innerWidth > 1024 && <p className={styles.gray}>(*주요 프로젝트 Click!)</p>}
         </div>
 
         {innerWidth > 1024 ? 

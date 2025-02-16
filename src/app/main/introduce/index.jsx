@@ -7,8 +7,8 @@ export default function Introduce () {
     <section className={styles.container}>
       <div className={styles.inner}>
         <div className={styles.left}>
-          <span>Introduce</span>
-          <h3>저는 UI 마크업 개발자, <br/>웹 퍼블리셔 <br/>문유정 입니다.</h3>
+          <span className={styles.sub_title}>Introduce</span>
+          <h3 className={styles.title}>저는 UI 마크업 개발자, <br className={styles.line_wrap}/>웹 퍼블리셔 <br className={styles.line_wrap} />문유정 입니다.</h3>
         </div>
 
         <div className={styles.right}>
@@ -16,9 +16,9 @@ export default function Introduce () {
             <div className={styles.intro_box} key={item.id}>
               <span className={styles.category}>{item.category}</span>
               {item.number && 
-                <span className={styles.number}>{item.number} <p>+</p></span>
+                <span className={styles.number}>{item.number} <p className={styles.plus}>+</p></span>
               }
-              <p>{item.content}</p>
+              <p className={styles.contents}>{item.content}</p>
             </div>
           ))}
         </div>

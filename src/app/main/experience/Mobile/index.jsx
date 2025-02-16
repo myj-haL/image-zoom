@@ -22,20 +22,20 @@ export default function Mobile () {
         {experienceList.map((item) => (
           <SwiperSlide key={item.id}>
             <div className={styles.img_wrap}>
-              <Image alt="images" src={item.img} width={300} height={300} />
+              <Image alt="images" src={item.img} width={300} height={300} className={styles.thumbnail} />
             </div>
             <ul className={styles.intro}>
-              <li>
-                <span>Project name</span>
-                <p>{item.name}</p>
+              <li className={styles.item}>
+                <span className={styles.category}>Project name</span>
+                <p className={styles.category_item}>{item.name}</p>
               </li>
-              <li>
-                <span>Skills</span>
-                <p>{item.skills}</p>
+              <li className={styles.item}>
+                <span className={styles.category}>Skills</span>
+                <p className={styles.category_item}>{item.skills}</p>
               </li>
-              <li>
-                <span>Details of work</span>
-                <p>{item.explain}</p>
+              <li className={styles.item}>
+                <span className={styles.category}>Details of work</span>
+                <p className={styles.category_item}>{item.explain}</p>
               </li>
             </ul>
           </SwiperSlide>

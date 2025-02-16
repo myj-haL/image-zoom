@@ -70,6 +70,7 @@ export default function Home() {
               alt="bg img" 
               width={1920}
               height={1080}
+              className={styles.front_img}
             />
           
             <span className={styles.mouse_icon}>

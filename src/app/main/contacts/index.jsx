@@ -15,6 +15,7 @@ export default function Contacts () {
               alt="mail icon"
               width={50}
               height={50}
+              className={styles.icons}
             />
           </a>
           <a href="tel:+821026189434">
@@ -23,6 +24,7 @@ export default function Contacts () {
               alt="call icon"
               width={50}
               height={50}
+              className={styles.icons}
             />
           </a>
           <a href="https://www.linkedin.com/in/yujung-moon-dev" target="_blank">
@@ -31,6 +33,7 @@ export default function Contacts () {
               alt="linked icon"
               width={50}
               height={50}
+              className={styles.icons}
             />
           </a>
         </div>

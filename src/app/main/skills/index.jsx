@@ -18,6 +18,7 @@ export default function Skills () {
             src="/main/skill-left.png"
             width={500}
             height={500}
+            className={styles.left_img}
           />
 
           <div className={styles.right}>
@@ -29,8 +30,9 @@ export default function Skills () {
                     src={item.img}
                     width={55}
                     height={55}
+                    className={styles.skill_logo}
                   />
-                  <p>{item.name}</p>
+                  <p className={styles.skill_data}>{item.name}</p>
                 </li>
               ))}
             </ul>

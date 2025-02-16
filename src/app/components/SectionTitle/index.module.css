@@ -1,5 +1,5 @@
 .wrap {
-  span {
+  .sub_title {
     display: block;
     font-size: 14px;
     font-weight: 400;
@@ -8,7 +8,7 @@
     margin-bottom: 6px;
   }
 
-  h3 {
+  .title {
     font-size: 20px;
     font-weight: 700;
     line-height: 30px; 
@@ -16,22 +16,22 @@
   }
 
   &.white {
-    span {
+    .sub_title {
       color: #DEDEDE;
     }
 
-    h3 {
+    .title {
       color: #fff;
     }
   }
 
   @media screen and (min-width:1024px) {
-    span {
+    .sub_title {
       font-size: 25px;
       margin-bottom: 10px;
     }
 
-    h3 {
+    .title {
       font-size: 55px;
       line-height: 55px;
     }
