@@ -1,12 +1,13 @@
-.modal {
-  :global(.modal-dialog) {
-    width: 100%;
-    max-width: 1296px;
-  }
+:global(.modal-dialog) {
+  width: 100%;
+  max-width: 1296px;
+}
 
-  :global(.modal-content) {
-    border-radius: 16px;
-  }
+:global(.modal-content) {
+  border-radius: 16px;
+}
+
+.modal {
 
   .modal_inner {
     padding: 40px;
