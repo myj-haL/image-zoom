@@ -47,16 +47,4 @@
     }
 
   }
-
-  :global(.swiper-pagination) {
-    bottom: -40px;
-  }
-  :global(.swiper-pagination-bullet) {
-    opacity: 1;
-    background-color: #9C9C9C;
-  }
-
-  :global(.swiper-pagination-bullet.swiper-pagination-bullet-active) {
-    background-color: #0A0A0A;
-  }
 }

@@ -32,18 +32,6 @@
     display: grid;
     overflow: initial;
 
-    :global(.swiper-pagination) {
-      bottom: -45px;
-
-      :global(.swiper-pagination-bullet) {
-        background: #9C9C9C;
-        opacity: 1;
-
-        &:global(.swiper-pagination-bullet-active) {
-          background: #fff;
-        }
-      }
-    }
   }
 
   .group {
@@ -118,9 +106,7 @@
       overflow: hidden;
       padding-bottom: 100px;
 
-      :global(.swiper-pagination) {
-        bottom: 40px;
-      }
+     
     }
 
     .group {

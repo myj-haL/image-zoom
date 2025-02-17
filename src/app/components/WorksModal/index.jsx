@@ -22,18 +22,18 @@ export default function WorksModal ({img, name, explain, learn, skills, ...props
           <Image alt="close" src="/icon-close.svg" width={30} height={30} />
         </button>
         <h3 className={styles.title}>
-          <p>Project Name</p>
+          <p className={styles.sub_title}>Project Name</p>
           {name}
         </h3>
         
         <div className={styles.contents}>
           <div className={styles.left}>
-            <p>{explain}</p>
+            <p className={styles.explain}>{explain}</p>
 
             {learn && 
-            <span>
+            <span className={styles.use_learn}>
               <p className={styles.category}>[Learn]</p>
-              <p>{learn}</p>
+              <p className={styles.learn_data}>{learn}</p>
             </span>
             }
             
@@ -42,7 +42,7 @@ export default function WorksModal ({img, name, explain, learn, skills, ...props
               <p>{skills}</p>
             </span>
           </div>
-          <Image alt="img" src={img} width={1000} height={1000} />
+          <Image alt="img" src={img} width={1000} height={1000} className={styles.detail_img} />
         </div>
       </Modal.Body>
     </Modal>

@@ -16,7 +16,7 @@ export default function Mobile () {
           clickable: true,
         }}
         modules={[Pagination]}
-        className={styles.works_slide}
+        className={`${styles.works_slide} mobile_slide`}
         autoHeight={true}
       >
         {experienceList.map((item) => (
