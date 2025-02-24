@@ -23,9 +23,11 @@ export default function Works () {
 
   const innerWidth = useMediaQuery();
   const pagingRef = useRef(null);
+
+  const basePath = process.env.NODE_ENV === "production" ? "/image-zoom" : "";
   
   return (
-    <div className={styles.container}>
+    <div className={styles.container} style={{backgroundImage: `url("${basePath}/main/works-bg.png")`}}>
       <div className={styles.inner}>
         <div className={styles.top_title}>
           <SectionTitle 

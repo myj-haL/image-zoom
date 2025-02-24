@@ -54,6 +54,8 @@ export default function Home() {
     );
   }, [wrapRef.current, imgBoxRef.current, titleBoxRef.current ]);
 
+  const basePath = process.env.NODE_ENV === "production" ? "/image-zoom" : "";
+
   return (
       <div className={styles.container} ref={wrapRef}>
         <div className={styles.img_box}>
@@ -86,7 +88,7 @@ export default function Home() {
         </div>
 
         <div className={styles.content}>
-          <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}>
+          <section className={`${styles.section} ${styles.first}`} ref={firstSecRef} style={{backgroundImage:`url("${basePath}/main/inner_bg.png")`}}>
             <div className={styles.first_title_box} ref={titleBoxRef}>
               <p className={styles.in_title}>Toward</p>
               <p className={styles.in_title}>infinite</p>

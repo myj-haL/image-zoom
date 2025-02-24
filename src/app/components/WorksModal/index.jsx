@@ -19,7 +19,7 @@ export default function WorksModal ({img, name, explain, learn, skills, ...props
     >
       <Modal.Body className={styles.modal_inner}>
         <button className={styles.close} type="button" onClick={closeModal}>
-          <Image alt="close" src="/icon-close.svg" width={30} height={30} />
+          <Image alt="close" src="./icon-close.svg" width={30} height={30} />
         </button>
         <h3 className={styles.title}>
           <p className={styles.sub_title}>Project Name</p>
