@@ -66,7 +66,7 @@ export default function Home() {
               <p className={styles.in_title}>Limits</p>
             </div>
             <Image 
-              src="/main/bg.png" 
+              src="./main/bg.png" 
               alt="bg img" 
               width={1920}
               height={1080}
@@ -75,7 +75,7 @@ export default function Home() {
           
             <span className={styles.mouse_icon}>
               <Image 
-                src="/icon-circle-down.svg"
+                src="./icon-circle-down.svg"
                 alt="down icon"
                 width={58}
                 height={58}
