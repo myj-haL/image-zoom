@@ -12,7 +12,7 @@
     z-index: 10;
   
     &.first {
-      background-image: url(/main/inner_bg.png);
+      background-image: url(main/inner_bg.png);
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
