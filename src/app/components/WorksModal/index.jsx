@@ -1,9 +1,9 @@
 "use client";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Modal from 'react-bootstrap/Modal';
 import styles from "./index.module.css";
 import Image from "next/image";
-import Modal from 'react-bootstrap/Modal';
 
 export default function WorksModal ({img, name, explain, learn, skills, ...props}) {
   const closeModal = () => {

@@ -53,7 +53,7 @@ export default function Works () {
                     <div className={styles.group_left}>
                       <h3 className={styles.name}>
                         {item.company}
-                        <p>{item.date}</p>
+                        <p className={styles.date}>{item.date}</p>
                       </h3>
                       <span className={styles.position}>{item.position}</span>
                     </div>

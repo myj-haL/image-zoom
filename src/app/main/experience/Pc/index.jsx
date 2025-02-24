@@ -17,9 +17,8 @@ export default function Pc () {
       <ResponsiveMasonry
         className={styles.container}
         columnsCount={3}
-        gutterBreakpoints={{1024: "30px"}}
       >
-        <Masonry className={styles.masonry_list}>
+        <Masonry className={styles.masonry_list} gutter="30px">
           {experienceList.map((item) => (
             <button type="button" className={styles.img_wrap} key={item.id} 
             onClick={() => {
@@ -28,7 +27,7 @@ export default function Pc () {
             }}
             >
               {/* <Image alt="img" src={item.img} fill /> */}
-              <img alt="img" src={item.img}  style={{ aspectRatio:item.ratio}}  />
+              <img alt="img" className={styles.in_img} src={item.img}  style={{ aspectRatio:item.ratio}}  />
             </button>
           ))}
         </Masonry>

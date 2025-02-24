@@ -59,11 +59,11 @@ export default function Home() {
         <div className={styles.img_box}>
           <div className={styles.animate_inner} ref={imgBoxRef}>
             <div className={styles.title_box}>
-              <p>Beyond</p>
-              <p>
+              <p className={styles.in_title}>Beyond</p>
+              <p className={styles.in_title}>
                 One&apos;s
               </p> 
-              <p>Limits</p>
+              <p className={styles.in_title}>Limits</p>
             </div>
             <Image 
               src="/main/bg.png" 
@@ -79,6 +79,7 @@ export default function Home() {
                 alt="down icon"
                 width={58}
                 height={58}
+                className={styles.in_icon}
               />
             </span>
           </div>
@@ -87,9 +88,9 @@ export default function Home() {
         <div className={styles.content}>
           <section className={`${styles.section} ${styles.first}`} ref={firstSecRef}>
             <div className={styles.first_title_box} ref={titleBoxRef}>
-              <p>Toward</p>
-              <p>infinite</p>
-              <p>possibilities</p>
+              <p className={styles.in_title}>Toward</p>
+              <p className={styles.in_title}>infinite</p>
+              <p className={styles.in_title}>possibilities</p>
             </div>
           </section>
 

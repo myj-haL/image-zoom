@@ -13,11 +13,11 @@
 
 .modal-dialog {
   width: 100%;
-  max-width: 1296px;
+  max-width: 1296px !important;
 }
 
 .modal-content {
-  border-radius: 16px;
+  border-radius: 16px !important;
 }
 
 
