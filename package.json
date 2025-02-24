@@ -5,11 +5,11 @@
   "homepage": "https://myj-hal.github.io/image-zoom/",
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build && next export",
+    "build": "next build",
     "predeploy": "npm run build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run export && gh-pages -d out"
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@gsap/react": "^2.1.1",
