@@ -1,42 +1,42 @@
 const skillsList = [
   {
     id:0,
-    img:'/main/icon-react.svg',
+    img:'./main/icon-react.svg',
     name:'react'
   },
   {
     id:1,
-    img:'/main/icon-sass.svg',
+    img:'./main/icon-sass.svg',
     name:'sass'
   },
   {
     id:2,
-    img:'/main/icon-css.svg',
+    img:'./main/icon-css.svg',
     name:'css'
   },
   {
     id:3,
-    img:'/main/icon-html.svg',
+    img:'./main/icon-html.svg',
     name:'html'
   },
   {
     id:4,
-    img:'/main/icon-postcss.svg',
+    img:'./main/icon-postcss.svg',
     name:'postcss'
   },
   {
     id:5,
-    img:'/main/icon-vue.svg',
+    img:'./main/icon-vue.svg',
     name:'vue'
   },
   {
     id:6,
-    img:'/main/icon-github.svg',
+    img:'./main/icon-github.svg',
     name:'github'
   },
   {
     id:7,
-    img:'/main/icon-js.svg',
+    img:'./main/icon-js.svg',
     name:'javascript'
   }
 ]

@@ -15,7 +15,7 @@ export default function Skills () {
         <div className={styles.flex_wrap}>
           <Image 
             alt=""
-            src="/main/skill-left.png"
+            src="./main/skill-left.png"
             width={500}
             height={500}
             className={styles.left_img}
@@ -39,7 +39,7 @@ export default function Skills () {
 
             <Image 
               alt="plus"
-              src="/main/icon-plus.svg"
+              src="./main/icon-plus.svg"
               width={25}
               height={25}
               className={styles.plus}

@@ -11,7 +11,7 @@ export default function Contacts () {
         <div className={styles.sns_list}>
           <a href="mailto:myj262@gmail.com">
             <Image 
-              src="/main/icon-mail.svg"
+              src="./main/icon-mail.svg"
               alt="mail icon"
               width={50}
               height={50}
@@ -20,7 +20,7 @@ export default function Contacts () {
           </a>
           <a href="tel:+821026189434">
             <Image 
-              src="/main/icon-call.svg"
+              src="./main/icon-call.svg"
               alt="call icon"
               width={50}
               height={50}
@@ -29,7 +29,7 @@ export default function Contacts () {
           </a>
           <a href="https://www.linkedin.com/in/yujung-moon-dev" target="_blank">
             <Image 
-              src="/main/icon-linkedin.svg"
+              src="./main/icon-linkedin.svg"
               alt="linked icon"
               width={50}
               height={50}
