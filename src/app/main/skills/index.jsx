@@ -4,6 +4,9 @@ import skillsList from "./skillsList";
 import Image from "next/image";
 
 export default function Skills () {
+  const pdfFileName = "이력서_문유정.pdf";
+  const encodedFileName = encodeURIComponent(pdfFileName);
+
   return (
     <div className={styles.container}>
       <div className={styles.inner}> 
@@ -54,7 +57,7 @@ export default function Skills () {
         </div>
 
 
-        <a href="" download className={styles.download}>
+        <a href={`./main/resume/${encodedFileName}`} download className={styles.download}>
           Get my resume
         </a>
       </div>
